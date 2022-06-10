@@ -22,7 +22,11 @@ class Person {
   }
   
   public double bmi() {
-    return this.weight/height/height;
+    return this.weight/this.height/this.height;
+  }
+  
+  public static void printCount() {
+    System.out.println("合計" + Person.count + "人です");
   }
   
   public void printData() {
