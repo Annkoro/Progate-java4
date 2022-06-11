@@ -24,7 +24,11 @@ class Person {
   }
   
   public String fullName() {
-    return this.fullName + "" + lastName;
+    if(this.middleName == 0) {
+      return this.firstName + "" + lastName;
+    } else {
+      return this.firstNmae + "" + middleName + "" + lastName;
+    }
   }
   
   public double bmi() {
