@@ -2,6 +2,7 @@ class Person {
   public static int count = 0;
   
   public String firstName;
+  public String middleName;
   public String lastName;
   public int age;
   public double height;
@@ -11,6 +12,16 @@ class Person {
     Person.count+=1;
     
     this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+  
+  Person(String firstName, String middleName, String lastName, int age, double height, double weight) {
+    Person.count+=1;
+    this.firstName = firstName;
+    this.middleName = middleName;
     this.lastName = lastName;
     this.age = age;
     this.height = height;
