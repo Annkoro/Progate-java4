@@ -19,13 +19,8 @@ class Person {
   }
   
   Person(String firstName, String middleName, String lastName, int age, double height, double weight) {
-    Person.count+=1;
-    this.firstName = firstName;
+    this(firstName, lastName, age, height, weight);
     this.middleName = middleName;
-    this.lastName = lastName;
-    this.age = age;
-    this.height = height;
-    this.weight = weight;
   }
   
   public String fullName() {
