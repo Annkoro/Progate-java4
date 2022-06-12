@@ -5,5 +5,7 @@ class Main {
     Person person2 = new Person("John", "Christopher", "Smith", 65, 1.75, 80.0);
     person2.printData();
     Person.printCount();
+    System.out.println("----------------------");
+    System.out.println("person2のミドルネームは" + person2.getMiddleName() + "です");
   }
 }
