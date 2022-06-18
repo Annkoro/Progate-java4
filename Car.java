@@ -19,3 +19,4 @@ class Car {
     this.distance += distance;
     System.out.println("走行距離：" + this.distance + "km");
   }
+}
